@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { HeartPulse, Compass, Music } from "lucide-react";
 import { Container } from "@/components/layout/Container";
 import { SectionHeading } from "@/components/sections/SectionHeading";
@@ -17,23 +18,34 @@ export default function Home() {
 
   return (
     <>
-      <section className="py-20 sm:py-28">
-        <Container className="flex flex-col items-center gap-6 text-center">
-          <span className="text-sm font-bold uppercase tracking-wide text-primary">
-            {hero.eyebrow}
-          </span>
-          <h1 className="max-w-3xl font-heading text-4xl text-ink sm:text-5xl">
-            {hero.heading}
-          </h1>
-          <p className="max-w-2xl text-lg text-ink-soft">{hero.body}</p>
-          <div className="flex flex-wrap items-center justify-center gap-4">
-            <Button href={hero.primaryCta.href} size="lg">
-              {hero.primaryCta.label}
-            </Button>
-            <Button href={hero.secondaryCta.href} variant="secondary" size="lg">
-              {hero.secondaryCta.label}
-            </Button>
+      <section className="py-16 sm:py-24">
+        <Container className="grid items-center gap-12 lg:grid-cols-[1fr_auto]">
+          <div className="flex flex-col items-center gap-6 text-center lg:items-start lg:text-left">
+            <span className="text-sm font-bold uppercase tracking-wide text-primary">
+              {hero.eyebrow}
+            </span>
+            <h1 className="max-w-xl font-heading text-4xl text-ink sm:text-5xl">
+              {hero.heading}
+            </h1>
+            <p className="max-w-xl text-lg text-ink-soft">{hero.body}</p>
+            <div className="flex flex-wrap items-center justify-center gap-4 lg:justify-start">
+              <Button href={hero.primaryCta.href} size="lg">
+                {hero.primaryCta.label}
+              </Button>
+              <Button href={hero.secondaryCta.href} variant="secondary" size="lg">
+                {hero.secondaryCta.label}
+              </Button>
+            </div>
           </div>
+
+          <Image
+            src="/images/kanwaljit-portrait.webp"
+            alt="Kanwaljit Singh, founder of Gollistic Healing, wearing a blue patka and a long white beard"
+            width={320}
+            height={317}
+            priority
+            className="mx-auto rounded-full border-4 border-surface object-cover shadow-md"
+          />
         </Container>
       </section>
 

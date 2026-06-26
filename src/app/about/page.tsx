@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Container } from "@/components/layout/Container";
 import { PageHeader } from "@/components/sections/PageHeader";
 import { SectionHeading } from "@/components/sections/SectionHeading";
@@ -22,13 +23,22 @@ export default function AboutPage() {
       <PageHeader eyebrow={header.eyebrow} title={header.title} intro={header.intro} />
 
       <section className="py-16">
-        <Container className="mx-auto flex max-w-2xl flex-col gap-6">
-          <SectionHeading title={journey.title} align="left" />
-          {journey.paragraphs.map((paragraph) => (
-            <p key={paragraph} className="text-lg text-ink-soft">
-              {paragraph}
-            </p>
-          ))}
+        <Container className="grid gap-12 lg:grid-cols-[auto_1fr] lg:items-start">
+          <Image
+            src="/images/kanwaljit-portrait.webp"
+            alt="Kanwaljit Singh, founder of Gollistic Healing, wearing a blue patka and a long white beard"
+            width={280}
+            height={277}
+            className="mx-auto rounded-full border-4 border-surface-muted object-cover shadow-md"
+          />
+          <div className="mx-auto flex max-w-2xl flex-col gap-6 lg:mx-0">
+            <SectionHeading title={journey.title} align="left" />
+            {journey.paragraphs.map((paragraph) => (
+              <p key={paragraph} className="text-lg text-ink-soft">
+                {paragraph}
+              </p>
+            ))}
+          </div>
         </Container>
       </section>
 
