@@ -75,3 +75,36 @@ export const gollisticHealingContent: ServicePageContent = {
     label: "Book a Home Visit",
   },
 };
+
+export const gollisticHealingTherapies = [
+  {
+    name: "Sujok Therapy",
+    description:
+      "Sujok works on the principle that the hands and feet are a map of the whole body. By applying gentle pressure — and sometimes small magnets or seeds — to specific points, it helps relieve pain at its source and restore the body's natural balance.",
+    helpsWith: "Joint pain, headaches, and general body imbalance.",
+  },
+  {
+    name: "Auricular (Ear) Therapy",
+    description:
+      "Like Sujok, auricular therapy treats the ear as a reflection of the whole body. Gentle stimulation of specific ear points can ease physical pain, calm the nervous system, and support emotional balance.",
+    helpsWith: "Stress, tension, and pain relief alongside other techniques.",
+  },
+  {
+    name: "Cupping",
+    description:
+      "Cupping uses gentle suction to improve circulation, release deep muscle tension, and draw out stagnation in the tissue. It's especially effective for stiffness and pain that has settled into the back, shoulders, and neck.",
+    helpsWith: "Back, shoulder, and neck stiffness; muscle tension.",
+  },
+  {
+    name: "Magnet Therapy",
+    description:
+      "Small magnets are placed on specific points of the body to support circulation and offer a gentle, non-invasive form of pain relief. It is often used alongside Sujok and auricular work as part of a calm, integrated session.",
+    helpsWith: "Ongoing pain management and circulation support.",
+  },
+  {
+    name: "Taping",
+    description:
+      "Therapeutic taping supports muscles and joints during movement and recovery, helping to reduce swelling and ease strain — without restricting your natural range of motion.",
+    helpsWith: "Joint support, swelling, and recovery after strain.",
+  },
+] as const;

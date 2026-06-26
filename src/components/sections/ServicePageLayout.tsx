@@ -7,9 +7,10 @@ import type { ServicePageContent } from "@/types/content";
 
 type ServicePageLayoutProps = {
   content: ServicePageContent;
+  afterOfferings?: React.ReactNode;
 };
 
-export function ServicePageLayout({ content }: ServicePageLayoutProps) {
+export function ServicePageLayout({ content, afterOfferings }: ServicePageLayoutProps) {
   const { header, offerings, whoItHelps, approach, pricing, closingStatement, cta } = content;
 
   return (
@@ -47,6 +48,8 @@ export function ServicePageLayout({ content }: ServicePageLayoutProps) {
           </div>
         </Container>
       </section>
+
+      {afterOfferings}
 
       <section className="bg-surface-muted py-16">
         <Container>
