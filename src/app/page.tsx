@@ -38,7 +38,8 @@ export default function Home() {
       </section>
 
       <section className="py-12">
-        <Container>
+        <Container className="flex flex-col gap-8">
+          <SectionHeading title="How I Can Help" />
           <div className="grid gap-6 sm:grid-cols-3">
             {services.map((service) => (
               <ServiceCard

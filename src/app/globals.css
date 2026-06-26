@@ -6,8 +6,10 @@
   --color-sand: #e4dcc8;
   --color-ink: #2b2620;
   --color-ink-soft: #5a5246;
-  --color-saffron: #c97b2e;
-  --color-saffron-dark: #a8631f;
+  /* Darkened from the brand's original #c97b2e (3.07:1 on cream, fails
+     WCAG AA) to a shade that clears 4.5:1 with margin for normal text. */
+  --color-saffron: #9c5b1c;
+  --color-saffron-dark: #7c4a15;
   --color-indigo: #2e4374;
   --color-indigo-dark: #21315a;
 }

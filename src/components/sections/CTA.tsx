@@ -19,7 +19,12 @@ export function CTA({ title, subtitle, links }: CTAProps) {
       {subtitle && <p className="max-w-2xl text-lg text-cream/90">{subtitle}</p>}
       <div className="flex flex-wrap items-center justify-center gap-4">
         {links.map((link) => (
-          <Button key={link.href} href={link.href} variant={link.variant ?? "primary"} size="lg">
+          <Button
+            key={`${link.label}-${link.href}`}
+            href={link.href}
+            variant={link.variant ?? "primary"}
+            size="lg"
+          >
             {link.label}
           </Button>
         ))}
