@@ -3,6 +3,8 @@ import { Lato, Playfair_Display } from "next/font/google";
 import { site } from "@/content/shared/site";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { buildPersonAndLocalBusinessJsonLd } from "@/lib/seo";
 import "./globals.css";
 
 const playfairDisplay = Playfair_Display({
@@ -48,6 +50,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${playfairDisplay.variable} ${lato.variable} antialiased`}>
+        <JsonLd data={buildPersonAndLocalBusinessJsonLd()} />
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-secondary focus:px-4 focus:py-2 focus:text-cream"
