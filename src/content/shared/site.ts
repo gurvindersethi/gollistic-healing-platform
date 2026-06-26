@@ -21,4 +21,8 @@ export const socials = {
     handle: "@kanwaljit_s",
     url: "https://www.instagram.com/kanwaljit_s",
   },
+  youtube: {
+    handle: "@kjsfalcon51",
+    url: "https://www.youtube.com/@kjsfalcon51",
+  },
 } as const;

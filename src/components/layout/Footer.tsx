@@ -20,6 +20,15 @@ function InstagramIcon() {
   );
 }
 
+function YoutubeIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-4 w-4" aria-hidden="true">
+      <rect x="2" y="5" width="20" height="14" rx="4" />
+      <path d="M10.5 9.5l5 2.5-5 2.5z" fill="currentColor" stroke="none" />
+    </svg>
+  );
+}
+
 export function Footer() {
   const year = new Date().getFullYear();
 
@@ -55,6 +64,15 @@ export function Footer() {
           >
             <InstagramIcon />
             <span>Instagram</span>
+          </a>
+          <a
+            href={socials.youtube.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 hover:text-primary"
+          >
+            <YoutubeIcon />
+            <span>YouTube</span>
           </a>
         </div>
       </Container>
