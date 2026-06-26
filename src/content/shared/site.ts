@@ -15,3 +15,10 @@ export const contact = {
   email: "gurvindersingh.sethi@gmail.com",
   serviceArea: "Bakersfield, California",
 } as const;
+
+export const socials = {
+  instagram: {
+    handle: "@kanwaljit_s",
+    url: "https://www.instagram.com/kanwaljit_s",
+  },
+} as const;
