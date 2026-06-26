@@ -3,6 +3,7 @@ import { HeartPulse, Compass, Music } from "lucide-react";
 import { Container } from "@/components/layout/Container";
 import { SectionHeading } from "@/components/sections/SectionHeading";
 import { ServiceCard } from "@/components/sections/ServiceCard";
+import { AccentShapes } from "@/components/sections/AccentShapes";
 import { CTA } from "@/components/sections/CTA";
 import { Button } from "@/components/ui/Button";
 import { homeContent } from "@/content/pages/home";
@@ -18,7 +19,13 @@ export default function Home() {
 
   return (
     <>
-      <section className="py-16 sm:py-24">
+      <section className="relative overflow-hidden py-16 sm:py-24">
+        <AccentShapes
+          circles={[
+            { size: 220, top: "-60px", right: "-60px", color: "primary" },
+            { size: 140, bottom: "-40px", right: "180px", color: "secondary" },
+          ]}
+        />
         <Container className="grid items-center gap-12 lg:grid-cols-[1fr_auto]">
           <div className="flex flex-col items-center gap-6 text-center lg:items-start lg:text-left">
             <span className="text-sm font-bold uppercase tracking-wide text-primary">
@@ -66,7 +73,13 @@ export default function Home() {
         </Container>
       </section>
 
-      <section className="py-20">
+      <section className="relative overflow-hidden py-20">
+        <AccentShapes
+          circles={[
+            { size: 260, top: "-80px", left: "-80px", color: "secondary" },
+            { size: 160, bottom: "-50px", right: "-40px", color: "primary" },
+          ]}
+        />
         <Container className="flex flex-col items-center gap-8 text-center">
           <SectionHeading
             eyebrow={philosophy.eyebrow}
@@ -88,7 +101,8 @@ export default function Home() {
         </Container>
       </section>
 
-      <section className="py-12">
+      <section className="relative overflow-hidden py-12">
+        <AccentShapes circles={[{ size: 180, top: "-50px", right: "10%", color: "primary" }]} />
         <Container className="flex flex-col items-center gap-8 text-center">
           <SectionHeading title={whoIServe.title} />
           <ul className="grid w-full max-w-3xl gap-4 sm:grid-cols-2">
