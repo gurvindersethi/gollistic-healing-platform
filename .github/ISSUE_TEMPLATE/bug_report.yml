@@ -1,0 +1,64 @@
+name: Bug report
+description: Report something broken or not working as expected
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug. Please include enough detail to reproduce the issue.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: A clear description of the bug
+      placeholder: Describe what you expected vs. what actually happened
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Numbered steps to reproduce the behavior
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. See error
+    validations:
+      required: true
+
+  - type: input
+    id: page
+    attributes:
+      label: Page or URL
+      description: Where did this occur?
+      placeholder: e.g. /services, homepage, staging URL
+
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser / device
+      options:
+        - Chrome (desktop)
+        - Safari (desktop)
+        - Firefox (desktop)
+        - Safari (iOS)
+        - Chrome (Android)
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or recordings
+      description: Drag and drop images or paste links
+      placeholder: Optional but helpful
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional context
+      placeholder: Console errors, network failures, related issues, etc.
