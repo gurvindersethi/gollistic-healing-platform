@@ -12,6 +12,6 @@ export const site = {
 export const contact = {
   phoneDisplay: "(818) 800-2039",
   phoneHref: "+18188002039",
-  email: "kjsfalcon@gmail.com",
+  email: "gurvindersingh.sethi@gmail.com",
   serviceArea: "Bakersfield, California",
 } as const;
