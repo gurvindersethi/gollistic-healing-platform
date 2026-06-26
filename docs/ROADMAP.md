@@ -2,6 +2,8 @@
 
 High-level delivery plan for the Gollistic Healing platform.
 
+**Execution board:** [GitHub Projects](./PROJECT_BOARD.md) — features move from Backlog → Planning → Designing → Development → Testing → Ready to Deploy → Done.
+
 ## Phases
 
 ### Phase 1 — Foundation

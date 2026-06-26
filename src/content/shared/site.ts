@@ -1,0 +1,17 @@
+export const site = {
+  name: "Gollistic Healing by Kanwaljit Singh",
+  shortName: "Gollistic Healing",
+  tagline: "Healing • Guidance • Gurbani — A Journey for Mind, Body & Soul",
+  description:
+    "Gollistic Healing, Life Coaching, and Gurbani & Kirtan teaching with Kanwaljit Singh — serving Bakersfield, California and online.",
+  url: "https://gollistichealingbykanwaljit.com",
+  locale: "en_US",
+  footerTagline: "Serving humanity with sincerity, one soul at a time.",
+} as const;
+
+export const contact = {
+  phoneDisplay: "(818) 800-2039",
+  phoneHref: "+18188002039",
+  email: "kjsfalcon@gmail.com",
+  serviceArea: "Bakersfield, California",
+} as const;

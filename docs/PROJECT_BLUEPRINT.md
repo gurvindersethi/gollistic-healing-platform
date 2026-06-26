@@ -66,6 +66,10 @@ Official website and digital platform for **Gollistic Healing** by Kanwaljit Sin
 |------|------|----------------|
 | | | |
 
+## Project management
+
+- [GitHub Projects board](./PROJECT_BOARD.md) — issue-driven pipeline for Homepage, About, Healing, Booking, and future work
+
 ## References
 
 - [Roadmap](./ROADMAP.md)

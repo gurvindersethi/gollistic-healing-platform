@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+:root {
+  --color-cream: #faf6ef;
+  --color-cream-dark: #f3ecdf;
+  --color-sand: #e4dcc8;
+  --color-ink: #2b2620;
+  --color-ink-soft: #5a5246;
+  --color-saffron: #c97b2e;
+  --color-saffron-dark: #a8631f;
+  --color-indigo: #2e4374;
+  --color-indigo-dark: #21315a;
+}
+
+@theme inline {
+  --color-background: var(--color-cream);
+  --color-foreground: var(--color-ink);
+
+  --color-primary: var(--color-saffron);
+  --color-primary-dark: var(--color-saffron-dark);
+  --color-secondary: var(--color-indigo);
+  --color-secondary-dark: var(--color-indigo-dark);
+  --color-surface: var(--color-cream);
+  --color-surface-muted: var(--color-cream-dark);
+  --color-border: var(--color-sand);
+  --color-ink: var(--color-ink);
+  --color-ink-soft: var(--color-ink-soft);
+
+  --font-heading: var(--font-playfair);
+  --font-sans: var(--font-lato);
+}
+
+html {
+  /* Base size lifted from the 16px default so every rem-based Tailwind
+     text utility scales up for an older, low-vision audience. */
+  font-size: 112.5%;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading), Georgia, serif;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-secondary);
+  outline-offset: 2px;
+}
